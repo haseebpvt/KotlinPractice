@@ -32,6 +32,23 @@ fun main() {
 
     println(str1.lastIndex)
 
+    println(str1.indices)
+
+    println(str1.lastIndex)
+
+    // any
+    val emptyStr = ""
+    println(str1.any())
+
+
+    // as iterable
+    for (c in str1.asIterable()) {
+        print("$c, ")
+    }
     println()
+
+    for (c in str1.asSequence()) {
+        print("$c, ")
+    }
 
 }
